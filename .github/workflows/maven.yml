@@ -45,7 +45,7 @@ jobs:
         host: ${{ secrets.SERVER_IP }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        port: '53253'
+        port: '${{ secrets.PORT }}'
         source: "staging/*"
         target: "/home/print/桌面"
 
