@@ -43,3 +43,15 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: SFTP Deploy
+      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      with:
+          username: 'print'
+          server: '${{ secrets.SERVER_IP }}'
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: '53253'
+          local_path: './staging/*'
+          remote_path: '/home/print/桌面'
+          sftpArgs: '-o ConnectTimeout=5'
+      
+
