@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.childrenprogramme.mapper.AdCarerImagesMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.childrenprogramme.entity.AdCarerImages">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="carerInfoId" column="carer_info_id" jdbcType="BIGINT"/>
+            <result property="carerAuthImageUrl" column="carer_auth_image_url" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+</mapper>
