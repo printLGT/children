@@ -52,8 +52,8 @@ jobs:
         ARGS: "-rlgoDzvc -i"
         SOURCE: "staging/"
         REMOTE_HOST: ${{ secrets.SERVER_IP }}
-        REMOTE_USER: "print"
-        REMOTE_PORT: "53253"
+        REMOTE_USER: print
+        REMOTE_PORT: '53253'
         TARGET: "/home/print/桌面"
       
 
